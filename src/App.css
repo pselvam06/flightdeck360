@@ -1,0 +1,58 @@
+.App {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.main-content {
+  min-height: calc(100vh - 76px);
+  padding-top: 20px;
+}
+
+.flight-card {
+  transition: transform 0.2s ease-in-out;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.flight-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 10px;
+}
+
+.status-pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-approved {
+  background-color: #d1edff;
+  color: #0c5460;
+}
+
+.status-rejected {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Bootstrap overrides */
+.navbar-brand {
+  font-weight: bold;
+}
+
+.btn {
+  border-radius: 6px;
+}
+
+.card {
+  border-radius: 8px;
+}
+
+.form-control, .form-select {
+  border-radius: 6px;
+}
