@@ -1,12 +1,14 @@
 import { defineConfig, loadEnv } from 'vite'
 import react from '@vitejs/plugin-react'
 
+const isGitHubPages = process.env.GITHUB_PAGES === 'true';
+
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
   
   return {
     plugins: [react()],
-      base: '/',
+       base: isGitHubPages ? '/flightdeck360/' : '/',
     server: {
       port: 3000,
       host: '0.0.0.0',
